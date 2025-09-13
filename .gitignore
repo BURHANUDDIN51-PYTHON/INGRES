@@ -9,7 +9,7 @@ __pycache__/
 # Virtual environment
 venv/
 env/
-.env/
+ingres_api/.env/
 
 # Logs
 *.log
@@ -30,3 +30,4 @@ render.yaml
 # Ignore any other sensitive or large folders (add here)
 # For example, if you want to ignore the natural_response folder:
 # natural_response/
+ingres_api/.env
