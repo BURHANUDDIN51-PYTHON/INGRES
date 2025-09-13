@@ -31,3 +31,5 @@ render.yaml
 # For example, if you want to ignore the natural_response folder:
 # natural_response/
 ingres_api/.env
+ingres_api/.env
+ingres_api/.env
