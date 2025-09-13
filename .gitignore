@@ -1,0 +1,32 @@
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+.env/
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Render-specific
+render.yaml
+
+# Ignore any other sensitive or large folders (add here)
+# For example, if you want to ignore the natural_response folder:
+# natural_response/
