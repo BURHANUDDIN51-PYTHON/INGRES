@@ -12,30 +12,7 @@ FEW_SHOT_EXAMPLES=[
       "visualization_data": {}
     }
   },
-  {
-    "intent": "list_units_by_category",
-    "query": "List all districts in the critical category",
-    "rawData": [
-      {"district": "District A", "status": "Critical"},
-      {"district": "District B", "status": "Critical"}
-    ],
-    "expected_output": {
-      "nl_response": "Districts in the critical category are District A and District B.",
-      "visualization_data": {}
-    }
-  },
-  {
-    "intent": "list_units_by_condition",
-    "query": "Show blocks with extraction above 90%",
-    "rawData": [
-      {"block": "Block X", "extraction": 95},
-      {"block": "Block Y", "extraction": 92}
-    ],
-    "expected_output": {
-      "nl_response": "Blocks with extraction above 90% are Block X (95%) and Block Y (92%).",
-      "visualization_data": {}
-    }
-  },
+  
   {
     "intent": "compare_states_extraction",
     "query": "Compare groundwater extraction between Maharashtra and Gujarat and show me a chart",
@@ -54,20 +31,7 @@ FEW_SHOT_EXAMPLES=[
       }
     }
   },
-  {
-    "intent": "compare_categories_in_state",
-    "query": "Show me category distribution in Rajasthan",
-    "rawData": {
-      "Safe": 120,
-      "Semi-critical": 80,
-      "Critical": 40,
-      "Over-exploited": 25
-    },
-    "expected_output": {
-      "nl_response": "In Rajasthan, there are 120 safe units, 80 semi-critical units, 40 critical units, and 25 over-exploited units.",
-      "visualization_data": {}
-    }
-  },
+
   {
     "intent": "get_historical_data",
     "query": "Show me groundwater history for District A",
@@ -81,30 +45,6 @@ FEW_SHOT_EXAMPLES=[
       "visualization_data": {}
     }
   },
-  {
-    "intent": "get_state_metric",
-    "query": "What is groundwater availability in State A?",
-    "rawData": {
-      "state": "State A",
-      "availability": "1500 MCM"
-    },
-    "expected_output": {
-      "nl_response": "The groundwater availability in State A is 1500 MCM.",
-      "visualization_data": {}
-    }
-  },
-  {
-    "intent": "get_data_for_unit",
-    "query": "Give me the status of District A",
-    "rawData": {
-      "district": "District A",
-      "status": "Critical"
-    },
-    "expected_output": {
-      "nl_response": "District A is in the Critical category.",
-      "visualization_data": {}
-    }
-  },
  
   {
     "intent": "general_help",
@@ -115,14 +55,6 @@ FEW_SHOT_EXAMPLES=[
       "visualization_data": {}
     }
   },
-  {
-    "intent": "thank_you",
-    "query": "Thanks a lot!",
-    "rawData": {},
-    "expected_output": {
-      "nl_response": "You’re welcome! Happy to help.",
-      "visualization_data": {}
-    }
-  },
-
 ]
+
+

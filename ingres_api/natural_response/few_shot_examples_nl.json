@@ -1,0 +1,2060 @@
+[
+  {
+    "intent": "definition",
+    "query": "What is meant by over-exploited?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Over-exploited means more than 100% of the annual extractable groundwater resources are used. The extraction rate is significantly higher than the recharge rate.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Safe category ka matlab kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Safe category ka matlab hai ki annual extractable groundwater resources ka 70% se kam upyog kiya ja raha hai, aur extraction rate recharge rate se kam hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "Over-exploited blocks ki list dikhao",
+    "rawData": [
+      {
+        "block": "Block P",
+        "status": "Over-exploited"
+      },
+      {
+        "block": "Block Q",
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Over-exploited blocks hain Block P and Block Q.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "Show blocks with less than 50% extraction",
+    "rawData": [
+      {
+        "block": "Block M",
+        "extraction": 45
+      },
+      {
+        "block": "Block N",
+        "extraction": 30
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Blocks with less than 50% extraction are Block M (45%) and Block N (30%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Compare Punjab and Haryana's groundwater use and show a chart",
+    "rawData": {
+      "Punjab": 850,
+      "Haryana": 620
+    },
+    "expected_output": {
+      "nl_response": "Punjab has higher groundwater extraction (850 units) compared to Haryana (620 units).",
+      "visualization_data": {
+        "type": "bar",
+        "labels": [
+          "Punjab",
+          "Haryana"
+        ],
+        "data": [
+          850,
+          620
+        ],
+        "x_axis": "State",
+        "y_axis": "Groundwater Extraction"
+      }
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Gujarat mein categories ka distribution kya hai?",
+    "rawData": {
+      "Safe": 50,
+      "Semi-critical": 35,
+      "Critical": 20,
+      "Over-exploited": 10
+    },
+    "expected_output": {
+      "nl_response": "Gujarat mein 50 safe units, 35 semi-critical units, 20 critical units, aur 10 over-exploited units hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "Bikaner district ki groundwater history dikhao",
+    "rawData": [
+      {
+        "year": 2020,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2021,
+        "status": "Critical"
+      },
+      {
+        "year": 2022,
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Bikaner district 2020 mein Semi-critical se 2021 mein Critical ho gaya, aur 2022 tak Critical category mein raha.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "Uttar Pradesh mein groundwater availability kitni hai?",
+    "rawData": {
+      "state": "Uttar Pradesh",
+      "availability": "4500 MCM"
+    },
+    "expected_output": {
+      "nl_response": "Uttar Pradesh mein groundwater availability 4500 MCM hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Jodhpur district ka status kya hai?",
+    "rawData": {
+      "district": "Jodhpur",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "Jodhpur district Critical category mein hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Namaste",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Namaste! Main aapki kis tarah madad kar sakta hoon groundwater data se related?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Shukriya",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Aapka swagat hai! Khushi hui madad karke.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Tell me about the weather.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm sorry, I can only provide information about groundwater data. I cannot help with weather forecasts.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is the meaning of 'critical' in the context of groundwater?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "In the context of groundwater, 'critical' means that 90-100% of the annual extractable groundwater resources are being utilized. This indicates a high level of stress on the water source.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "Gujarat mein Safe category ke blocks list karo",
+    "rawData": [
+      {
+        "block": "Block G1",
+        "status": "Safe"
+      },
+      {
+        "block": "Block G2",
+        "status": "Safe"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Gujarat mein Safe category ke blocks hain Block G1 aur Block G2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "Districts with extraction above 100% dikhao",
+    "rawData": [
+      {
+        "district": "District A",
+        "extraction": 110
+      },
+      {
+        "district": "District B",
+        "extraction": 105
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Districts with extraction above 100% are District A (110%) and District B (105%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Uttar Pradesh aur Rajasthan ke groundwater extraction ka comparison dikhao.",
+    "rawData": {
+      "Uttar Pradesh": 4500,
+      "Rajasthan": 3000
+    },
+    "expected_output": {
+      "nl_response": "Uttar Pradesh ka groundwater extraction (4500 units) Rajasthan se (3000 units) zyada hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Churu district ka groundwater status batao",
+    "rawData": {
+      "district": "Churu",
+      "status": "Semi-critical"
+    },
+    "expected_output": {
+      "nl_response": "Churu district Semi-critical category mein hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "How has the groundwater status of Delhi changed over the last 5 years?",
+    "rawData": [
+      {
+        "year": 2018,
+        "status": "Safe"
+      },
+      {
+        "year": 2019,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2020,
+        "status": "Critical"
+      },
+      {
+        "year": 2021,
+        "status": "Over-exploited"
+      },
+      {
+        "year": 2022,
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Delhi's groundwater status changed from Safe in 2018 to Semi-critical in 2019, Critical in 2020, and has been Over-exploited since 2021.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the 'Semi-critical' category.",
+    "rawData": [
+      {
+        "district": "District C",
+        "status": "Semi-critical"
+      },
+      {
+        "district": "District D",
+        "status": "Semi-critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Districts in the 'Semi-critical' category are District C and District D.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Show a comparison of groundwater extraction between Tamil Nadu and Karnataka with a bar chart.",
+    "rawData": {
+      "Tamil Nadu": 500,
+      "Karnataka": 400
+    },
+    "expected_output": {
+      "nl_response": "Tamil Nadu has a higher groundwater extraction (500 units) compared to Karnataka (400 units).",
+      "visualization_data": {
+        "type": "bar",
+        "labels": [
+          "Tamil Nadu",
+          "Karnataka"
+        ],
+        "data": [
+          500,
+          400
+        ],
+        "x_axis": "State",
+        "y_axis": "Groundwater Extraction"
+      }
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hello there.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hello! How can I assist you with groundwater data today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thank you for the help.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're most welcome! Feel free to ask if you need more information.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What is the stock market trend today?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am unable to provide information on the stock market. I specialize in groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater recharge kya hota hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater recharge wo prakriya hai jisse paani zameen ke andar jaata hai, jisse underground aquifers dobara bhar jaate hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "What are the districts with an extraction rate below 60%?",
+    "rawData": [
+      {
+        "district": "District X",
+        "extraction": 55
+      },
+      {
+        "district": "District Y",
+        "extraction": 48
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The districts with an extraction rate below 60% are District X (55%) and District Y (48%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "What is the total groundwater available in Madhya Pradesh?",
+    "rawData": {
+      "state": "Madhya Pradesh",
+      "availability": "2500 MCM"
+    },
+    "expected_output": {
+      "nl_response": "The total groundwater available in Madhya Pradesh is 2500 MCM.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Show me the distribution of groundwater categories in Uttar Pradesh.",
+    "rawData": {
+      "Safe": 200,
+      "Semi-critical": 150,
+      "Critical": 90,
+      "Over-exploited": 60
+    },
+    "expected_output": {
+      "nl_response": "In Uttar Pradesh, there are 200 safe units, 150 semi-critical units, 90 critical units, and 60 over-exploited units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "History of groundwater status for Jaipur.",
+    "rawData": [
+      {
+        "year": 2019,
+        "status": "Critical"
+      },
+      {
+        "year": 2020,
+        "status": "Over-exploited"
+      },
+      {
+        "year": 2021,
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Jaipur's groundwater status was Critical in 2019 and became Over-exploited in 2020, remaining so in 2021.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hi",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hi! How may I help you?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thnx a lot.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome! Happy to help.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What are the latest news headlines?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I can only answer questions related to groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "S afe districts list karo",
+    "rawData": [
+      {
+        "district": "District S1",
+        "status": "Safe"
+      },
+      {
+        "district": "District S2",
+        "status": "Safe"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Safe districts hain District S1 aur District S2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Give me data for Block X.",
+    "rawData": {
+      "block": "Block X",
+      "status": "Critical",
+      "extraction_rate": 95
+    },
+    "expected_output": {
+      "nl_response": "Block X is in the Critical category with an extraction rate of 95%.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Maharashtra vs Gujarat groundwater usage comparison.",
+    "rawData": {
+      "Maharashtra": 450,
+      "Gujarat": 380
+    },
+    "expected_output": {
+      "nl_response": "Maharashtra's groundwater usage is higher at 450 units compared to Gujarat's 380 units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "I want to know the number of critical and over-exploited blocks in Rajasthan and also compare the total extraction of these two categories.",
+    "rawData": {
+      "Critical": 40,
+      "Over-exploited": 25,
+      "Critical_extraction": 4000,
+      "Over_exploited_extraction": 3500
+    },
+    "expected_output": {
+      "nl_response": "In Rajasthan, there are 40 critical blocks and 25 over-exploited blocks. The total extraction from critical blocks is 4000 units, while from over-exploited blocks it is 3500 units. Critical blocks have a higher total extraction.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Can you provide a list of all rivers in India?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "My expertise is limited to groundwater data. I cannot provide information on rivers.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Jaipur district ka data dikhao.",
+    "rawData": {
+      "district": "Jaipur",
+      "status": "Over-exploited"
+    },
+    "expected_output": {
+      "nl_response": "Jaipur district Over-exploited category mein hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "general_help",
+    "query": "Mujhe madad chahiye",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Bilkul! Aap mujhse groundwater status, availability, historical data aur alag-alag states ya districts ke comparison ke baare mein pooch sakte hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Wht is semi-critial?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Semi-critical ka matlab hai ki annual groundwater resources ka 70-90% upyog ho raha hai, lekin kuchh availability abhi bhi bachi hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Dilstrict a ka status btao",
+    "rawData": {
+      "district": "District A",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "District A Critical category mein hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater extraction rate kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater extraction rate us paani ka percentage hai jo zameen se har saal nikala jaata hai, uske total available resource ke muqable.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "How many districts in Maharashtra are in the safe category and what is their total extraction?",
+    "rawData": {
+      "count": 50,
+      "total_extraction": 1200
+    },
+    "expected_output": {
+      "nl_response": "In Maharashtra, there are 50 districts in the safe category with a total extraction of 1200 units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "What is the difference in groundwater extraction between Rajasthan and Gujarat?",
+    "rawData": {
+      "Rajasthan": 3000,
+      "Gujarat": 1500
+    },
+    "expected_output": {
+      "nl_response": "The difference in groundwater extraction between Rajasthan (3000 units) and Gujarat (1500 units) is 1500 units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "List the districts with an extraction rate greater than 90% in Rajasthan.",
+    "rawData": [
+      {
+        "district": "Jaipur",
+        "extraction": 105
+      },
+      {
+        "district": "Jodhpur",
+        "extraction": 98
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Rajasthan, the districts with an extraction rate greater than 90% are Jaipur (105%) and Jodhpur (98%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "How has the groundwater status of Delhi changed over the last 5 years?",
+    "rawData": [
+      {
+        "year": 2018,
+        "status": "Safe"
+      },
+      {
+        "year": 2019,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2020,
+        "status": "Critical"
+      },
+      {
+        "year": 2021,
+        "status": "Over-exploited"
+      },
+      {
+        "year": 2022,
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Delhi's groundwater status changed from Safe in 2018 to Semi-critical in 2019, Critical in 2020, and has been Over-exploited since 2021.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hello, how are you?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am an AI assistant for groundwater data, and I'm ready to help you. How can I assist you today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "You're a great help, thank you.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm glad I could help! Is there anything else you need?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Please suggest a good book to read.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot provide book recommendations. I am a specialized AI for groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "Punjab mein critical blocks kaun se hain?",
+    "rawData": [
+      {
+        "block": "Block P1",
+        "status": "Critical"
+      },
+      {
+        "block": "Block P2",
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Punjab mein critical blocks hain Block P1 aur Block P2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Give me the groundwater status of Block Y.",
+    "rawData": {
+      "block": "Block Y",
+      "status": "Safe"
+    },
+    "expected_output": {
+      "nl_response": "Block Y is in the Safe category.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Compare groundwater availability in Rajasthan vs Tamil Nadu.",
+    "rawData": {
+      "Rajasthan": 3000,
+      "Tamil Nadu": 2500
+    },
+    "expected_output": {
+      "nl_response": "Groundwater availability in Rajasthan (3000 units) is higher than in Tamil Nadu (2500 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "I want to know the number of over-exploited blocks in Rajasthan and show me their extraction rates.",
+    "rawData": [
+      {
+        "block": "Block Jodhpur",
+        "status": "Over-exploited",
+        "extraction_rate": 120
+      },
+      {
+        "block": "Block Jaipur",
+        "status": "Over-exploited",
+        "extraction_rate": 115
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Rajasthan, the over-exploited blocks are Jodhpur (120%) and Jaipur (115%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Sime-critikal ka matlab kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Semi-critical ka matlab hai ki annual groundwater resources ka 70-90% upyog ho raha hai, lekin kuchh availability abhi bhi bachi hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Gujaarat me kitne over-exploited units hain?",
+    "rawData": {
+      "state": "Gujarat",
+      "category": "Over-exploited",
+      "count": 10
+    },
+    "expected_output": {
+      "nl_response": "Gujarat mein 10 over-exploited units hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "general_help",
+    "query": "What can you do?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I can help you with information on groundwater status, availability, historical data, and comparisons between states or districts. Just ask me a question!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "How do I grow a plant?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am not equipped to provide information on gardening. My focus is on groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the Critical category in Madhya Pradesh.",
+    "rawData": [
+      {
+        "district": "District M1",
+        "status": "Critical"
+      },
+      {
+        "district": "District M2",
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Madhya Pradesh, the districts in the Critical category are District M1 and District M2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "What is the groundwater extraction percentage for Punjab?",
+    "rawData": {
+      "state": "Punjab",
+      "extraction_percentage": 170
+    },
+    "expected_output": {
+      "nl_response": "The groundwater extraction percentage for Punjab is 170%.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Show me a comparison of groundwater extraction between Kerala and Tamil Nadu.",
+    "rawData": {
+      "Kerala": 150,
+      "Tamil Nadu": 500
+    },
+    "expected_output": {
+      "nl_response": "Groundwater extraction in Tamil Nadu (500 units) is significantly higher than in Kerala (150 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "What is the status of the Pali district?",
+    "rawData": {
+      "district": "Pali",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "Pali district is in the Critical category.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Good morning",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Good morning! How can I assist you with groundwater data today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thanks.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Tell me a joke.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am a serious AI focused on groundwater data. I do not have a sense of humor. How can I help you with groundwater information?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "Over-exploited districts ki list dikhao.",
+    "rawData": [
+      {
+        "district": "District A",
+        "status": "Over-exploited"
+      },
+      {
+        "district": "District B",
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Over-exploited districts hain District A aur District B.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "What is the status of Block Z?",
+    "rawData": {
+      "block": "Block Z",
+      "status": "Semi-critical"
+    },
+    "expected_output": {
+      "nl_response": "Block Z is in the Semi-critical category.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Show me groundwater extraction comparison between Punjab and Uttar Pradesh with a bar chart.",
+    "rawData": {
+      "Punjab": 850,
+      "Uttar Pradesh": 4500
+    },
+    "expected_output": {
+      "nl_response": "Uttar Pradesh has a much higher groundwater extraction (4500 units) compared to Punjab (850 units).",
+      "visualization_data": {
+        "type": "bar",
+        "labels": [
+          "Punjab",
+          "Uttar Pradesh"
+        ],
+        "data": [
+          850,
+          4500
+        ],
+        "x_axis": "State",
+        "y_axis": "Groundwater Extraction"
+      }
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "Show me blocks with extraction rate more than 100%.",
+    "rawData": [
+      {
+        "block": "Block A",
+        "extraction": 110
+      },
+      {
+        "block": "Block B",
+        "extraction": 105
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Blocks with an extraction rate more than 100% are Block A (110%) and Block B (105%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "general_help",
+    "query": "Help me with groundwater data.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I can help with information about groundwater status, availability, historical data, and comparisons. What specific information are you looking for?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What is the capital of France?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot answer general knowledge questions. I am programmed to handle groundwater-related queries only.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Critcal category ka kya matlab hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Critical category ka matlab hai ki annual extractable groundwater resources ka 90-100% upyog ho raha hai, jo paani ke source par high level ka stress dikhata hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Maharastra ka groundwater availibility kya hai?",
+    "rawData": {
+      "state": "Maharashtra",
+      "availability": "1800 MCM"
+    },
+    "expected_output": {
+      "nl_response": "Maharashtra mein groundwater availability 1800 MCM hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "Show me the trend of groundwater levels in Haryana.",
+    "rawData": [
+      {
+        "year": 2018,
+        "status": "Safe"
+      },
+      {
+        "year": 2019,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2020,
+        "status": "Semi-critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The groundwater status in Haryana has moved from Safe in 2018 to Semi-critical in 2019 and remained so in 2020.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Which state has a higher groundwater extraction, Rajasthan or Gujarat?",
+    "rawData": {
+      "Rajasthan": 3000,
+      "Gujarat": 1500
+    },
+    "expected_output": {
+      "nl_response": "Rajasthan has a higher groundwater extraction (3000 units) compared to Gujarat (1500 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "Show me the safe blocks in Punjab.",
+    "rawData": [
+      {
+        "block": "Block Jalandhar",
+        "status": "Safe"
+      },
+      {
+        "block": "Block Amritsar",
+        "status": "Safe"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Punjab, the safe blocks are Jalandhar and Amritsar.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Groundwater status of Chhabra, Rajasthan.",
+    "rawData": {
+      "location": "Chhabra",
+      "state": "Rajasthan",
+      "status": "Over-exploited"
+    },
+    "expected_output": {
+      "nl_response": "The groundwater status of Chhabra, Rajasthan is Over-exploited.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What is the population of India?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am not able to provide demographic information. I am an AI for groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Aap kaise hain?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Main ek groundwater data AI assistant hoon. Main theek hoon aur aapki madad karne ke liye taiyaar hoon. Aap kya jaanna chahte hain?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "What's the meaning of 'ver-exploited'?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "'Over-exploited' ka matlab hai ki annual extractable groundwater resources ka 100% se zyada upyog kiya ja raha hai. Extraction rate recharge rate se kaafi zyada hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "Tell me the number of semi-critical units in Gujarat and also what is the number of safe units in Rajasthan?",
+    "rawData": {
+      "Gujarat_semi_critical": 35,
+      "Rajasthan_safe": 120
+    },
+    "expected_output": {
+      "nl_response": "Gujarat mein 35 semi-critical units hain aur Rajasthan mein 120 safe units hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "How does a car engine work?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot provide information on car engines. My domain is groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "Rajasthan mein kitna groundwater available hai?",
+    "rawData": {
+      "state": "Rajasthan",
+      "availability": "3000 MCM"
+    },
+    "expected_output": {
+      "nl_response": "Rajasthan mein 3000 MCM groundwater available hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Show me a pie chart of groundwater category distribution in Punjab.",
+    "rawData": {
+      "Safe": 50,
+      "Semi-critical": 100,
+      "Critical": 150,
+      "Over-exploited": 200
+    },
+    "expected_output": {
+      "nl_response": "In Punjab, there are 50 safe units, 100 semi-critical units, 150 critical units, and 200 over-exploited units.",
+      "visualization_data": {
+        "type": "pie",
+        "labels": [
+          "Safe",
+          "Semi-critical",
+          "Critical",
+          "Over-exploited"
+        ],
+        "data": [
+          50,
+          100,
+          150,
+          200
+        ],
+        "title": "Groundwater Category Distribution in Punjab"
+      }
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Wht's the status of dristrict Churu?",
+    "rawData": {
+      "district": "Churu",
+      "status": "Semi-critical"
+    },
+    "expected_output": {
+      "nl_response": "Churu district Semi-critical category mein hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "List all blocks in Gujarat with groundwater extraction above 80%.",
+    "rawData": [
+      {
+        "block": "Block G3",
+        "extraction": 85
+      },
+      {
+        "block": "Block G4",
+        "extraction": 92
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Gujarat, blocks with groundwater extraction above 80% are Block G3 (85%) and Block G4 (92%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "Tell me about the groundwater history of Gujarat.",
+    "rawData": [
+      {
+        "year": 2018,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2019,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2020,
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Gujarat's groundwater status has been Semi-critical in 2018 and 2019, moving to Critical in 2020.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "How many days are there in a week?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm sorry, I can't answer that question. I can only provide information related to groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "What are the groundwater conditions of Rajasthan and Gujarat and which state has more critical units?",
+    "rawData": {
+      "Rajasthan": {
+        "Safe": 120,
+        "Semi-critical": 80,
+        "Critical": 40,
+        "Over-exploited": 25
+      },
+      "Gujarat": {
+        "Safe": 50,
+        "Semi-critical": 35,
+        "Critical": 20,
+        "Over-exploited": 10
+      }
+    },
+    "expected_output": {
+      "nl_response": "In Rajasthan, there are 120 safe, 80 semi-critical, 40 critical, and 25 over-exploited units. In Gujarat, there are 50 safe, 35 semi-critical, 20 critical, and 10 over-exploited units. Rajasthan has more critical units (40) compared to Gujarat (20).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Give me data for district Pali.",
+    "rawData": {
+      "district": "Pali",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "Pali district is in the Critical category.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is a 'safe' category?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "A 'safe' category means that the annual extractable groundwater resources are being used at less than 70%. The extraction rate is sustainable.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the Critical category in Rajasthan.",
+    "rawData": [
+      {
+        "district": "Jaipur",
+        "status": "Critical"
+      },
+      {
+        "district": "Ajmer",
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Rajasthan, the districts in the Critical category are Jaipur and Ajmer.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "What is the historical trend of groundwater in Jodhpur?",
+    "rawData": [
+      {
+        "year": 2019,
+        "status": "Semi-critical"
+      },
+      {
+        "year": 2020,
+        "status": "Critical"
+      },
+      {
+        "year": 2021,
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The groundwater status of Jodhpur moved from Semi-critical in 2019 to Critical in 2020 and remained in that category in 2021.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Tell me about the history of India.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I can only provide information about groundwater data. My knowledge does not extend to general history.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Groundwater ka stutas Gujarat mein kya hai?",
+    "rawData": {
+      "state": "Gujarat",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "Gujarat mein groundwater ka status Critical hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Which state uses more groundwater, Punjab or Haryana?",
+    "rawData": {
+      "Punjab": 850,
+      "Haryana": 620
+    },
+    "expected_output": {
+      "nl_response": "Punjab uses more groundwater (850 units) than Haryana (620 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "What are the categories of groundwater availability and which is the most stressed category?",
+    "rawData": {
+      "categories": [
+        "Safe",
+        "Semi-critical",
+        "Critical",
+        "Over-exploited"
+      ],
+      "most_stressed": "Over-exploited"
+    },
+    "expected_output": {
+      "nl_response": "The categories of groundwater availability are Safe, Semi-critical, Critical, and Over-exploited. The most stressed category is Over-exploited.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hello",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hi! How can I assist you with groundwater data?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thank you",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "List districts with extraction rates between 70% and 90%.",
+    "rawData": [
+      {
+        "district": "District X",
+        "extraction": 75
+      },
+      {
+        "district": "District Y",
+        "extraction": 85
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The districts with extraction rates between 70% and 90% are District X (75%) and District Y (85%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "What is the groundwater availability in Punjab?",
+    "rawData": {
+      "state": "Punjab",
+      "availability": "450 MCM"
+    },
+    "expected_output": {
+      "nl_response": "The groundwater availability in Punjab is 450 MCM.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Show me the distribution of groundwater categories in Tamil Nadu.",
+    "rawData": {
+      "Safe": 80,
+      "Semi-critical": 50,
+      "Critical": 30,
+      "Over-exploited": 20
+    },
+    "expected_output": {
+      "nl_response": "In Tamil Nadu, there are 80 safe units, 50 semi-critical units, 30 critical units, and 20 over-exploited units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What is the weather like in Mumbai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot provide weather information. My function is to provide groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Kriticla blocks ka list dikhao.",
+    "rawData": [
+      {
+        "block": "Block R1",
+        "status": "Critical"
+      },
+      {
+        "block": "Block R2",
+        "status": "Critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "Critical blocks ki list hai Block R1 aur Block R2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "Give me the status of the Sikar district.",
+    "rawData": {
+      "district": "Sikar",
+      "status": "Over-exploited"
+    },
+    "expected_output": {
+      "nl_response": "Sikar district is in the Over-exploited category.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "complex_query",
+    "query": "Tell me the number of over-exploited blocks in Punjab and how many safe blocks are there in Gujarat?",
+    "rawData": {
+      "Punjab_over_exploited": 200,
+      "Gujarat_safe": 50
+    },
+    "expected_output": {
+      "nl_response": "There are 200 over-exploited blocks in Punjab and 50 safe blocks in Gujarat.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "general_help",
+    "query": "I need some information.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm ready to help. What kind of groundwater information are you looking for?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Who won the last World Cup?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot answer questions about sports. My purpose is to provide groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is the definition of a groundwater unit?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "A groundwater unit is typically a block or a district that is classified based on its groundwater availability and extraction rate.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the Over-exploited category in Uttar Pradesh.",
+    "rawData": [
+      {
+        "district": "District UP1",
+        "status": "Over-exploited"
+      },
+      {
+        "district": "District UP2",
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Uttar Pradesh, the districts in the Over-exploited category are District UP1 and District UP2.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_historical_data",
+    "query": "What is the historical trend of groundwater in Rajasthan?",
+    "rawData": [
+      {
+        "year": 2018,
+        "status": "Critical"
+      },
+      {
+        "year": 2019,
+        "status": "Over-exploited"
+      },
+      {
+        "year": 2020,
+        "status": "Over-exploited"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The groundwater status of Rajasthan has been Critical in 2018, moving to Over-exploited in 2019 and remaining so in 2020.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Compare groundwater extraction of Rajasthan and Gujarat.",
+    "rawData": {
+      "Rajasthan": 3000,
+      "Gujarat": 1500
+    },
+    "expected_output": {
+      "nl_response": "Rajasthan's groundwater extraction (3000 units) is higher than Gujarat's (1500 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "What is the tallest building in the world?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot provide information on this topic. My domain is groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Cheers, thanks for the help.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're very welcome! I'm glad to be of assistance.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "What is the total groundwater availability in Gujarat?",
+    "rawData": {
+      "state": "Gujarat",
+      "availability": "1500 MCM"
+    },
+    "expected_output": {
+      "nl_response": "The total groundwater availability in Gujarat is 1500 MCM.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Show me the distribution of groundwater categories in Punjab.",
+    "rawData": {
+      "Safe": 50,
+      "Semi-critical": 100,
+      "Critical": 150,
+      "Over-exploited": 200
+    },
+    "expected_output": {
+      "nl_response": "In Punjab, there are 50 safe units, 100 semi-critical units, 150 critical units, and 200 over-exploited units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the Semi-critical category in Uttar Pradesh.",
+    "rawData": [
+      {
+        "district": "District UP3",
+        "status": "Semi-critical"
+      },
+      {
+        "district": "District UP4",
+        "status": "Semi-critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Uttar Pradesh, the districts in the Semi-critical category are District UP3 and District UP4.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "Provide a recipe for a cake.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am not able to provide recipes. My knowledge is limited to groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_data_for_unit",
+    "query": "What is the groundwater status of the Pali district in Rajasthan?",
+    "rawData": {
+      "district": "Pali",
+      "state": "Rajasthan",
+      "status": "Critical"
+    },
+    "expected_output": {
+      "nl_response": "The groundwater status of Pali district in Rajasthan is Critical.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_states_extraction",
+    "query": "Compare groundwater extraction between Maharashtra and Punjab.",
+    "rawData": {
+      "Maharashtra": 1800,
+      "Punjab": 850
+    },
+    "expected_output": {
+      "nl_response": "Maharashtra has a higher groundwater extraction (1800 units) compared to Punjab (850 units).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "What's up?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm here to help with groundwater data. What would you like to know?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Okay, thanks.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "misspelling",
+    "query": "Safe categoery ka matlab kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Safe category ka matlab hai ki annual extractable groundwater resources ka 70% se kam upyog kiya ja raha hai, aur extraction rate recharge rate se kam hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_condition",
+    "query": "List districts with extraction rates below 70%.",
+    "rawData": [
+      {
+        "district": "District A",
+        "extraction": 65
+      },
+      {
+        "district": "District B",
+        "extraction": 55
+      }
+    ],
+    "expected_output": {
+      "nl_response": "The districts with extraction rates below 70% are District A (65%) and District B (55%).",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "get_state_metric",
+    "query": "What is the groundwater availability in Punjab?",
+    "rawData": {
+      "state": "Punjab",
+      "availability": "450 MCM"
+    },
+    "expected_output": {
+      "nl_response": "The groundwater availability in Punjab is 450 MCM.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "compare_categories_in_state",
+    "query": "Show me the distribution of groundwater categories in Haryana.",
+    "rawData": {
+      "Safe": 60,
+      "Semi-critical": 40,
+      "Critical": 30,
+      "Over-exploited": 20
+    },
+    "expected_output": {
+      "nl_response": "In Haryana, there are 60 safe units, 40 semi-critical units, 30 critical units, and 20 over-exploited units.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported",
+    "query": "How do I fix my phone?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I cannot provide technical support for devices. I can only help with groundwater data.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "list_units_by_category",
+    "query": "List all districts in the Semi-critical category in Rajasthan.",
+    "rawData": [
+      {
+        "district": "Churu",
+        "status": "Semi-critical"
+      },
+      {
+        "district": "Jalore",
+        "status": "Semi-critical"
+      }
+    ],
+    "expected_output": {
+      "nl_response": "In Rajasthan, the districts in the Semi-critical category are Churu and Jalore.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is INGRES?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "INGRES stands for INDIA-Groundwater Resource Estimation System. It is a system used for the assessment and management of groundwater resources in India.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater Resource Estimation System ka kya matlab hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater Resource Estimation System ka matlab hai ek aisa system jo kisi area mein maujood groundwater ki matra ko calculate aur estimate karta hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is 'recharge' in the context of groundwater estimation?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Recharge refers to the process by which water from rainfall, rivers, or other sources seeps into the ground to replenish aquifers. It is a key component of groundwater resource estimation.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater 'draft' kya hota hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'draft' ka matlab hai woh total paani jo zameen se nikaala jaata hai, jaise ki irrigation, domestic ya industrial use ke liye.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is the role of the Central Ground Water Board (CGWB) in groundwater estimation?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "The Central Ground Water Board (CGWB) is the apex body in India for the assessment, development, and management of the country's groundwater resources. It works with state governments to perform groundwater resource estimations.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What are 'assessment units' in INGRES?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Assessment units in INGRES are the smallest administrative units (like blocks, talukas, or mandals) used to calculate and categorize groundwater resources. These units are classified as Safe, Semi-critical, Critical, or Over-exploited.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater 'potential' kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'potential' ka matlab hai kisi area mein available groundwater ki anumanit matra jo bina kisi bade negative impact ke nikaali ja sakti hai. Isse extraction rate tay kiya jaata hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is 'groundwater level fluctuation'?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater level fluctuation refers to the rise and fall of the water table. It is an important indicator for monitoring groundwater health and is measured over time to assess the impact of extraction and recharge.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater ki 'availability' kya hoti hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'availability' ka matlab hai kisi area mein saal bhar mein upyog ke liye upalabd paani ki total matra. Ise M C M (Million Cubic Metres) mein maapa jaata hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater 'monitoring' kya hota hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'monitoring' ek prakriya hai jisme groundwater levels aur quality ko regularly check kiya jaata hai, jaise ki wells, borewells, aur piezometers mein.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is the 'dynamic' groundwater resource?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "The 'dynamic' groundwater resource is the part of the groundwater that gets replenished annually from rainfall and other sources. It is the renewable component of the total groundwater resource.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "What is 'specific yield' in groundwater estimation?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "'Specific yield' is the ratio of the volume of water that a saturated aquifer will yield by gravity to the total volume of the aquifer. It helps in calculating the amount of water that can be extracted.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater 'quality' ka kya matlab hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'quality' ka matlab hai paani mein maujood chemicals aur other substances ka level, jisse yeh tay hota hai ki paani peene ya agriculture ke liye safe hai ya nahi.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported_query",
+    "query": "INGRES ka headquarters kahan hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Main INGRES ke headquarters ke baare mein jankari nahi de sakta. Main kewal groundwater status aur related data provide kar sakta hoon.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported_query",
+    "query": "INGRES kab launch hua tha?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Mere paas INGRES ke launch date ki jankari nahi hai. Main groundwater data analysis mein mahir hoon, historical events mein nahi.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "INGRES mein 'command area' kya hota hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "INGRES mein 'command area' ka matlab hai woh agricultural area jahan irrigation ke liye surface water jaise canals ya reservoirs ka upyog hota hai, jisse groundwater extraction kam hota hai.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "Groundwater 'overdraft' kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Groundwater 'overdraft' tab hota hai jab zameen se nikala gaya paani, uske natural recharge rate se zyada hota hai. Isse groundwater levels gir jaate hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "INGRES ka main goal kya hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "INGRES ka main goal hai groundwater resources ka ek sahi assessment karna, taaki sustainable water management aur planning ki jaa sake.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "unsupported_query",
+    "query": "INGRES ki funding kaun karta hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Main INGRES ke funding sources ke baare mein information nahi de sakta. Main kewal groundwater data aur uske estimation se jude sawaal hi answer kar sakta hoon.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "definition",
+    "query": "INGRES mein 'non-command area' kya hota hai?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "INGRES mein 'non-command area' ka matlab hai woh area jahan irrigation primarily groundwater par nirbhar hai, yaani jahan surface water sources nahi hain.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hello",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hello! How can I help you with groundwater data today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hi there",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hi! What would you like to know about groundwater?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Hey",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Hey! Feel free to ask me anything about groundwater resources.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Good morning",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Good morning! How can I assist you?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Good afternoon",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Good afternoon! What information are you looking for?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Good evening",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Good evening! How can I help you with your groundwater queries?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Namaste",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Namaste! Main aapki kis tarah madad kar sakta hoon?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "Ram Ram",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Ram Ram! Groundwater se sambandhit koi jankari chahiye?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "What can you do?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I can provide information about groundwater status, availability, historical data, and comparisons between states or districts. How can I help you today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "greeting",
+    "query": "How are you?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm a large language model, and I'm ready to assist you. What can I help you with today?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thank you",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thanks a lot",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're very welcome! Is there anything else you need?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Shukriya",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Aapka swagat hai!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thnx",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "You're welcome! Happy to help.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "thank_you",
+    "query": "Thanks for your help",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Glad I could assist you!",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "goodbye",
+    "query": "Bye",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Goodbye! Feel free to come back if you have more questions.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "goodbye",
+    "query": "See you later",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "See you! Have a great day.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "goodbye",
+    "query": "Alvida",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "Alvida! Jab bhi koi jankari chahiye, main yahan hoon.",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "small_talk",
+    "query": "How's the weather today?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am unable to provide weather information. My expertise is limited to groundwater data. Is there anything I can help you with in that domain?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "small_talk",
+    "query": "What's new?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I don't have personal experiences or news. I'm here to help with your queries on groundwater. What's on your mind?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "small_talk",
+    "query": "Tell me a joke.",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I'm a serious AI assistant for groundwater data, not a comedian! How can I help you with a query on groundwater?",
+      "visualization_data": {}
+    }
+  },
+  {
+    "intent": "small_talk",
+    "query": "Can you chat with me?",
+    "rawData": {},
+    "expected_output": {
+      "nl_response": "I am designed to provide information about groundwater resources. I can answer your questions on this topic, but I'm not a conversational chat bot. What's your question?",
+      "visualization_data": {}
+    }
+  }
+
+]

@@ -1,0 +1,3227 @@
+[
+  {
+    "query": "Show me total annual groundwater recharge for Rajasthan in 2023",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "total_annual_groundwater_recharge",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "List districts in Gujarat with stage of groundwater extraction above 70%",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Gujarat",
+        "metric": "stage_of_gw_extraction",
+        "operator": ">",
+        "threshold": 70,
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Compare total annual extraction between Maharashtra and Karnataka",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "metric": "total_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Mujhe Jaipur ka irrigation extraction data chahiye",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "irrigation_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Show me net groundwater availability for future in Tamil Nadu",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metric": "net_gw_availability_for_future",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Kerala ka pichle 5 saal ka total natural discharge ka trend dikhao",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "total_natural_discharge",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ]
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Find districts in Punjab where ground water depth is more than 10 meters",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Punjab",
+        "metric": "ground_water_depth",
+        "operator": ">",
+        "threshold": 10,
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Total annual extraction ka data do Haryana ke liye",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Haryana",
+        "metric": "total_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What is the industrial annual extraction for Surat district?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Surat",
+        "metric": "industrial_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Show me annual allocation for domestic use in Uttar Pradesh",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Uttar Pradesh",
+        "metric": "annual_gw_allocation_for_domestic_use",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Who won the Cricket World Cup 2023?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Which districts in Andhra Pradesh are over-exploited?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "state_name": "Andhra Pradesh",
+        "unit_type": "district",
+        "condition": "over-exploited"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I need to find the semi-critical blocks in Tamil Nadu.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "unit_type": "block",
+        "condition": "semi-critical"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "How does the annual extraction in Gujarat compare to that in Rajasthan?",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Gujarat",
+          "Rajasthan"
+        ],
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What's the difference in monsoon recharge from rainfall and other sources in Punjab?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Punjab",
+        "metrics": [
+          "monsoon_recharge_from_rainfall",
+          "monsoon_recharge_from_other_sources"
+        ]
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Tell me about the historical data for ground water depth in Delhi.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Delhi",
+        "metric": "ground_water_depth"
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "What's the total annual groundwater recharge in Maharashtra?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Maharashtra",
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Find all districts with total annual extraction less than 500 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "metric": "total_annual_extraction",
+        "operator": "<",
+        "threshold": 500
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What is the domestic annual extraction for Bengaluru?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Compare industrial and domestic extraction in a state.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "industrial_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.85
+    }
+  },
+  {
+    "query": "What is the definition of stage of groundwater extraction?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "stage of groundwater extraction"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hey there!",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I need some help with this chatbot.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thanks a lot for the information.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Tell me about the history of the Mughal Empire.",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Gujarat mein total annual extraction kitna hai?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Maharashtra ke districts jaha monsoon recharge from rainfall 8000 MCM se zyada hai, unka list do.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Maharashtra",
+        "metric": "monsoon_recharge_from_rainfall",
+        "operator": ">",
+        "threshold": 8000
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Compare total natural discharge in Andhra Pradesh and Telangana.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Andhra Pradesh",
+          "Telangana"
+        ],
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Delhi ka historical data for domestic annual extraction kya hai?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Delhi",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Tell me about the net gw availability for future for Odisha.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Odisha",
+        "metric": "net_gw_availability_for_future"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What's the irrigation annual extraction in Coimbatore?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Coimbatore",
+        "metric": "irrigation_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "I need to know the industrial annual extraction for my state. My state is Kerala.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Ground water depth ka matlab kya hai?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "ground water depth"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hi, how are you?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Can you help me with a query about groundwater data?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thank you so much for your assistance.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What is the capital of France?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "List all districts in Bihar with low ground water depth.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "state_name": "Bihar",
+        "unit_type": "district",
+        "condition": "low"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "I want to see how monsoon recharge from rainfall and non-monsoon recharge compare in West Bengal.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "West Bengal",
+        "metrics": [
+          "monsoon_recharge_from_rainfall",
+          "non_monsoon_recharge_from_rainfall"
+        ]
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Get me the data for annual extractable groundwater resource for Delhi.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Delhi",
+        "metric": "annual_extractable_groundwater_resource"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What is the total annual extraction for Jaipur district?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Please explain what 'total natural discharge' means.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "total natural discharge"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hello, is anyone there?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I am stuck, can you provide some guidance?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I appreciate your help.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Tell me a joke.",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Show me blocks in Punjab that are safe.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Punjab",
+        "condition": "safe"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "apne rajasthan nu groundwater status su che?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "ground_water_depth"
+      },
+      "confidence": 0.85
+    }
+  },
+  {
+    "query": "What is the total annual groundwater recharge in Gujaratt?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What's the industrial annual extraction in Hyderbad?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Hyderabad",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "heeeelooo, I am here to get some information.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "List all districts in Andhra Pradesh with annual extraction greater than 10000 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Andhra Pradesh",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 10000
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Show me the historical trend for industrial extraction in Delhi.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Delhi",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Can you define 'annual extractable groundwater resource'?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "annual extractable groundwater resource"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "How are you doing?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I don't know what to ask. What can you do?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Cheers, mate.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "I want to buy a new car. What should I get?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Total natural discharge ka data Kerala ka do.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Compare domestic annual extraction and irrigation annual extraction in a state.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "domestic_annual_extraction",
+          "irrigation_annual_extraction"
+        ]
+      },
+      "confidence": 0.88
+    }
+  },
+  {
+    "query": "Show me the total annual extraction for Bengaluru for the last 5 years.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "total_annual_extraction",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022"
+        ]
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "List all districts in Uttar Pradesh that are critical.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Uttar Pradesh",
+        "condition": "critical"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Tell me about the annual gw allocation for domestic use in Gujarat.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "annual_gw_allocation_for_domestic_use"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Find all blocks with stage of gw extraction above 100%.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "metric": "stage_of_gw_extraction",
+        "operator": ">",
+        "threshold": 100
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "I need data for domestic annual extraction in Surat.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Surat",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Compare total annual groundwater recharge in Punjab and Haryana.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Punjab",
+          "Haryana"
+        ],
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What is the meaning of net gw availability for future?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "net gw availability for future"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hellooooo",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "I am having trouble. Can you assist?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thanks for your time.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "How do I cook pasta?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "show me total annual groundwater recharge for Rajasthaaan in 2023",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "total_annual_groundwater_recharge",
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Which districts in Mahaarashtra are critical?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Maharashtra",
+        "condition": "critical"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Compare total annual extraction of Rajasthan and Gujartt",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Rajasthan",
+          "Gujarat"
+        ],
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What is the annual extraction in the district of Jaipure?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "What does a 'safe' unit mean?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "safe"
+      },
+      "confidence": 0.97
+    }
+  },
+  {
+    "query": "hey there, what can you do for me?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I am looking for some help.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "thankssss for the data.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What's the weather like today?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What's the groundwater situation in Maharashtra?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Maharashtra",
+        "metric": "stage_of_gw_extraction"
+      },
+      "confidence": 0.8
+    }
+  },
+  {
+    "query": "Find blocks in Karnataka with very low groundwater depth.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Karnataka",
+        "condition": "very low"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Compare monsoon recharge from rainfall and other sources for a state.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "monsoon_recharge_from_rainfall",
+          "monsoon_recharge_from_other_sources"
+        ]
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "What's the annual extractable resource for my state, Andhra Pradesh?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Andhra Pradesh",
+        "metric": "annual_extractable_groundwater_resource"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Get me data for industrial extraction for Bhopal.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Bhopal",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What is the definition of 'annual extractable groundwater resource'?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "annual extractable groundwater resource"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hello there, I'd like to ask a question.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Can you provide some information?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "You've been a great help, thank you.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I am trying to find a good cafe near me.",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "List all districts in Tamil Nadu that are over-exploited.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Tamil Nadu",
+        "condition": "over-exploited"
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Find blocks in Rajasthan with stage of extraction less than 50%.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Rajasthan",
+        "metric": "stage_of_gw_extraction",
+        "operator": "<",
+        "threshold": 50
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Compare irrigation and domestic extraction in a state.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "irrigation_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Show me the historical data for total natural discharge in Kerala.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Total annual extraction ka data do for Karnataka.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Karnataka",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "What is the domestic annual extraction for Chennai?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Chennai",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What's the difference in total annual groundwater recharge between Maharashtra and Karnataka?",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Define 'monsoon recharge from rainfall'.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "monsoon recharge from rainfall"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hi, how can I help you?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Could you guide me on how to use this service?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Much obliged.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "How many states are there in India?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What's the stage of groundwater extraction for Surat?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Surat",
+        "metric": "stage_of_gw_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the total annual groundwater recharge in Tamil Nadu?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I want to compare irrigation extraction for Maharashtra and Karnataka.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "metric": "irrigation_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "List all districts in Bihar that are semi-critical.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Bihar",
+        "condition": "semi-critical"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the historical data for industrial annual extraction for Jaipur?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Find blocks in Haryana with ground water depth above 20 meters.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Haryana",
+        "metric": "ground_water_depth",
+        "operator": ">",
+        "threshold": 20
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Compare total annual extraction with net gw availability for future in Rajasthan.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metrics": [
+          "total_annual_extraction",
+          "net_gw_availability_for_future"
+        ]
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What does 'total annual extraction' mean?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "total annual extraction"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Namaste.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I need some help.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Bahut bahut dhanyawad.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I am feeling hungry.",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "monsoon recharge from rainfall in Gujart.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "monsoon_recharge_from_rainfall"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "List all districts in Andhra Praddesh that are safe.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Andhra Pradesh",
+        "condition": "safe"
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Compare total natural discharge in Tamil Nadu and Kerala.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Tamil Nadu",
+          "Kerala"
+        ],
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "I want to see the trend of domestic extraction in Chennai.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Chennai",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Can you provide me with the industrial annual extraction for Bengaluru?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Explain 'non-monsoon recharge from rainfall'.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "non-monsoon recharge from rainfall"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Heyy, how are you?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Can you give me some tips on using the chatbot?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "thanks for the quick response.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the population of India?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "List all districts with ground water depth less than 5 meters.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "metric": "ground_water_depth",
+        "operator": "<",
+        "threshold": 5
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Compare industrial and domestic extraction in Punjab.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Punjab",
+        "metrics": [
+          "industrial_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What's the annual extractable groundwater resource for Delhi?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Delhi",
+        "metric": "annual_extractable_groundwater_resource"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "I want to know the total annual extraction for my district, Jaipur.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the definition of 'irrigation annual extraction'?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "irrigation annual extraction"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "hello, I need some data.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Can you explain what this chatbot does?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thank you for the information.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What are the latest stock market trends?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Which districts are over-exploited in Punjab?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Punjab",
+        "condition": "over-exploited"
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "I need to find the semi-critical districts in Haryana.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Haryana",
+        "condition": "semi-critical"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare non-monsoon recharge from rainfall and other sources in Gujarat.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Gujarat",
+        "metrics": [
+          "non_monsoon_recharge_from_rainfall",
+          "non_monsoon_recharge_from_other_sources"
+        ]
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Historical data for net gw availability for future in Maharashtra.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Maharashtra",
+        "metric": "net_gw_availability_for_future"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Get me the data for stage of gw extraction in Karnataka.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Karnataka",
+        "metric": "stage_of_gw_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What's the irrigation annual extraction for the district of Surat?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Surat",
+        "metric": "irrigation_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare total annual groundwater recharge in Delhi and Punjab.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Delhi",
+          "Punjab"
+        ],
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Explain 'domestic annual extraction'.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "domestic annual extraction"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Heyyyyyy",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I am looking for some guidance.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I'm grateful for your help.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What's the highest mountain in the world?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Find all districts in Punjab with total annual extraction greater than 1000 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Punjab",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 1000
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "How is monsoon recharge from rainfall different from non-monsoon recharge from rainfall in Maharashtra?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Maharashtra",
+        "metrics": [
+          "monsoon_recharge_from_rainfall",
+          "non_monsoon_recharge_from_rainfall"
+        ]
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What's the stage of gw extraction for the state of Odisha?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Odisha",
+        "metric": "stage_of_gw_extraction"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What is the total annual extraction for the district of Surat?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Surat",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Show me the historical trend of total annual extraction in Uttar Pradesh.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Uttar Pradesh",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Compare the domestic annual extraction of Tamil Nadu and Kerala.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Tamil Nadu",
+          "Kerala"
+        ],
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Define 'monsoon recharge from other sources'.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "monsoon recharge from other sources"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hi.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What are my options here?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "You've been very helpful, thanks.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I am feeling sick, what should I do?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What's the groundwater status of Rajasthan in Gujarati?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "ground_water_depth"
+      },
+      "confidence": 0.85
+    }
+  },
+  {
+    "query": "How is irrigation extraction in Karnataka compared to Maharashtra?",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Karnataka",
+          "Maharashtra"
+        ],
+        "metric": "irrigation_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "List all districts in Andhra Pradesh with irrigation extraction above 5000 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Andhra Pradesh",
+        "metric": "irrigation_annual_extraction",
+        "operator": ">",
+        "threshold": 5000
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Show me the historical data for non-monsoon recharge from other sources in Gujarat.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "non_monsoon_recharge_from_other_sources"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What's the non-monsoon recharge from rainfall for the state of West Bengal?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "West Bengal",
+        "metric": "non_monsoon_recharge_from_rainfall"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What is the domestic annual extraction for Jaipur?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Can you define 'non-monsoon recharge from other sources'?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "non-monsoon recharge from other sources"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hello, good morning.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Help me with my query.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "thanks a ton!",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the meaning of life?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Which districts in Rajasthan have a high stage of groundwater extraction?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "condition": "high"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Find blocks in Bihar with total natural discharge below 100 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Bihar",
+        "metric": "total_natural_discharge",
+        "operator": "<",
+        "threshold": 100
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "I need to compare the annual extractable groundwater resource of Delhi and Kerala.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Delhi",
+          "Kerala"
+        ],
+        "metric": "annual_extractable_groundwater_resource"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Show me the historical trend of annual allocation for domestic use in Gujarat.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "annual_gw_allocation_for_domestic_use"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What is the net gw availability for future for the state of Tamil Nadu?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metric": "net_gw_availability_for_future"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Provide me with the domestic annual extraction data for Ahmedabad.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Ahmedabad",
+        "metric": "domestic_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What does 'annual gw allocation for domestic use' mean?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "annual gw allocation for domestic use"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Hey, what's up?",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Help me out, please.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thanks.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I'm looking for a good book to read.",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "List all districts in Andhra Pradesh that are critical.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Andhra Pradesh",
+        "condition": "critical"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "How does monsoon recharge from rainfall compare to non-monsoon recharge from rainfall in Gujarat?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Gujarat",
+        "metrics": [
+          "monsoon_recharge_from_rainfall",
+          "non_monsoon_recharge_from_rainfall"
+        ]
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Get me the annual extractable groundwater resource for Tamil Nadu.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metric": "annual_extractable_groundwater_resource"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "I need data for total annual extraction in Chennai.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Chennai",
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare total annual extraction of Rajasthan and Gujarat.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Rajasthan",
+          "Gujarat"
+        ],
+        "metric": "total_annual_extraction"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What is the historical trend for industrial annual extraction in Bengaluru?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "industrial_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Find districts in Maharashtra where industrial annual extraction is more than 200 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Maharashtra",
+        "metric": "industrial_annual_extraction",
+        "operator": ">",
+        "threshold": 200
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "How is irrigation extraction different from domestic extraction in Punjab?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Punjab",
+        "metrics": [
+          "irrigation_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What's the net gw availability for future for the state of Odisha?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Odisha",
+        "metric": "net_gw_availability_for_future"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the ground water depth for Ahmedabad?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Ahmedabad",
+        "metric": "ground_water_depth"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Show me the historical trend for total natural discharge in West Bengal.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "West Bengal",
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What does a 'critical' unit mean?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "critical"
+      },
+      "confidence": 0.97
+    }
+  },
+  {
+    "query": "Hello, good evening.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I require assistance with this chatbot.",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thank you very much.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "What is the capital of Japan?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Find blocks in Karnataka with low ground water depth.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Karnataka",
+        "condition": "low"
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Compare industrial and domestic extraction in a state.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "industrial_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.89
+    }
+  },
+  {
+    "query": "What's the total annual groundwater recharge in Odisha?",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Odisha",
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "I need data for total natural discharge in Bengaluru.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Compare irrigation and domestic annual extraction in Andhra Pradesh.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Andhra Pradesh",
+        "metrics": [
+          "irrigation_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What's the historical trend for ground water depth in Chennai?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Chennai",
+        "metric": "ground_water_depth"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "List all districts with total annual extraction less than 200 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "metric": "total_annual_extraction",
+        "operator": "<",
+        "threshold": 200
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "What is the meaning of a 'semi-critical' unit?",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "semi-critical"
+      },
+      "confidence": 0.97
+    }
+  },
+  {
+    "query": "Hi, I have a question.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Can you provide some information on how to use this service?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Thanks for the quick and accurate data.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Who is the current Prime Minister of India?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I need to find the critical districts in West Bengal.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "West Bengal",
+        "condition": "critical"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "What's the irrigation annual extraction for the district of Pune?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Pune",
+        "metric": "irrigation_annual_extraction"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Show me total annual extraction for Karnataka in 2022.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Karnataka",
+        "metric": "total_annual_extraction",
+        "year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare total natural discharge in West Bengal and Odisha.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "West Bengal",
+          "Odisha"
+        ],
+        "metric": "total_natural_discharge"
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "What is the historical data for total annual groundwater recharge in Punjab?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Punjab",
+        "metric": "total_annual_groundwater_recharge"
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Find blocks in West Bengal with annual extraction greater than 3000 MCM.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "West Bengal",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 3000
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What is the difference between industrial and domestic extraction in a state?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "metrics": [
+          "industrial_annual_extraction",
+          "domestic_annual_extraction"
+        ]
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Please provide a definition of 'ground water depth'.",
+    "response": {
+      "intent": "definition",
+      "entities": {
+        "term": "ground water depth"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "Greetings.",
+    "response": {
+      "intent": "general_greeting",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "I am new here, can you help me get started?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Thanks for your service.",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "How does a car engine work?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Mujhe Rajasthan ke groundwater ka data chahiye",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "ground_water_depth",
+        "year": 2023
+      },
+      "confidence": 0.85
+    }
+  },
+  {
+    "query": "What was the annual recharge in the Jaipur district in 2023?",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "total_annual_groundwater_recharge",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare the stage of extraction in Maharashtra and Gujarat.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Gujarat"
+        ],
+        "metric": "stage_of_gw_extraction",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Which blocks in Rajasthan have an annual extraction over 500 million cubic meters?",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Rajasthan",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 500,
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Get me the Kerala data for the last 5 years.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Kerala",
+        "years": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "confidence": 0.9
+    }
+  },
+  {
+    "query": "Compare extraction between Punjab and Haryana for 2021.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Punjab",
+          "Haryana"
+        ],
+        "metric": "total_annual_extraction",
+        "year": 2021
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Top 5 districts with highest stage of extraction 2023.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "metric": "stage_of_gw_extraction",
+        "sort_order": "desc",
+        "limit": 5,
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Mujhe help chahiye, kaise data check karun?",
+    "response": {
+      "intent": "general_help",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Shukriya!",
+    "response": {
+      "intent": "thank_you",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Who won the FIFA World Cup 2022?",
+    "response": {
+      "intent": "unsupported",
+      "entities": {},
+      "confidence": 0.99
+    }
+  },
+  {
+    "query": "Rajasthan ke districts ka total annual groundwater recharge batao 2020 se 2023 tak.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Rajasthan",
+        "unit_type": "district",
+        "metric": "total_annual_groundwater_recharge",
+        "start_year": 2020,
+        "end_year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Gujarat ka net groundwater availability aur domestic extraction data chahiye 2019-2023.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Gujarat",
+        "metrics": [
+          "net_gw_availability_for_future",
+          "domestic_annual_extraction"
+        ],
+        "start_year": 2019,
+        "end_year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "List all districts in Punjab where total annual extraction > 500 million cubic meters in 2022.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Punjab",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 500,
+        "year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare irrigation extraction in Maharashtra, Goa, aur Karnataka for 2021-2022.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Goa",
+          "Karnataka"
+        ],
+        "metric": "irrigation_annual_extraction",
+        "start_year": 2021,
+        "end_year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Non-monsoon rainfall recharge ka data batao Madhya Pradesh ke liye.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Madhya Pradesh",
+        "metric": "non_monsoon_recharge_from_rainfall",
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Annual extractable groundwater resource of Jaipur district for 2023.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metric": "annual_extractable_groundwater_resource",
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Stage of groundwater extraction aur total annual extraction comparison between Rajasthan and Haryana.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Rajasthan",
+          "Haryana"
+        ],
+        "metrics": [
+          "stage_of_gw_extraction",
+          "total_annual_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Kerala ke blocks ka total natural discharge batao 2020-2023.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Kerala",
+        "unit_type": "block",
+        "metric": "total_natural_discharge",
+        "start_year": 2020,
+        "end_year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Which districts in Rajasthan are over-exploited?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "condition": "over-exploited",
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Groundwater depth data of Pune district 2022.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Pune",
+        "metric": "ground_water_depth",
+        "year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Annual GW allocation for domestic use in Gujarat last year.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "annual_gw_allocation_for_domestic_use",
+        "year": 2022
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Total extraction aur irrigation extraction comparison in Tamil Nadu for 2021.",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metrics": [
+          "total_annual_extraction",
+          "irrigation_annual_extraction"
+        ],
+        "year": 2021
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Non-monsoon recharge from other sources in Odisha for 2023.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Odisha",
+        "metric": "non_monsoon_recharge_from_other_sources",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare stage of extraction across states: Maharashtra, Gujarat, and Karnataka.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Maharashtra",
+          "Gujarat",
+          "Karnataka"
+        ],
+        "metric": "stage_of_gw_extraction",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Rajasthan ka annual recharge batao 2022.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Rajasthan",
+        "metric": "total_annual_groundwater_recharge",
+        "year": 2022
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Domestic and industrial extraction data for Jaipur district 2023.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metrics": [
+          "domestic_annual_extraction",
+          "industrial_annual_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Top 3 districts in Maharashtra with highest groundwater depth.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Maharashtra",
+        "metric": "ground_water_depth",
+        "sort_order": "desc",
+        "limit": 3,
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Net groundwater availability for future in Karnataka.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Karnataka",
+        "metric": "net_gw_availability_for_future",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "List blocks in Gujarat where total annual extraction exceeds 400 million cubic meters.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Gujarat",
+        "metric": "total_annual_extraction",
+        "operator": ">",
+        "threshold": 400,
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Annual recharge comparison for all districts in Rajasthan 2021-2023.",
+    "response": {
+      "intent": "compare_data",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "metric": "total_annual_groundwater_recharge",
+        "start_year": 2021,
+        "end_year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Total annual groundwater recharge in Madhya Pradesh last 5 years.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Madhya Pradesh",
+        "metric": "total_annual_groundwater_recharge",
+        "years": [
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Compare annual extractable resources between Rajasthan and Gujarat 2020-2022.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Rajasthan",
+          "Gujarat"
+        ],
+        "metric": "annual_extractable_groundwater_resource",
+        "start_year": 2020,
+        "end_year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Stage of extraction and total annual extraction in Jaipur district.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metrics": [
+          "stage_of_gw_extraction",
+          "total_annual_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Groundwater depth for Kerala state 2022.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "ground_water_depth",
+        "year": 2022
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Non-monsoon recharge from rainfall in Punjab.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Punjab",
+        "metric": "non_monsoon_recharge_from_rainfall",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Total natural discharge for districts in Rajasthan 2023.",
+    "response": {
+      "intent": "list_units_by_category",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "metric": "total_natural_discharge",
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Irrigation annual extraction comparison in Haryana and Punjab.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Haryana",
+          "Punjab"
+        ],
+        "metric": "irrigation_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Domestic annual extraction in Gujarat last year.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Gujarat",
+        "metric": "domestic_annual_extraction",
+        "year": 2022
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Total annual extraction and stage of extraction in Tamil Nadu districts.",
+    "response": {
+      "intent": "list_units_by_category",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Tamil Nadu",
+        "metrics": [
+          "total_annual_extraction",
+          "stage_of_gw_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "Rajasthan ke districts ka net GW availability batao.",
+    "response": {
+      "intent": "list_units_by_category",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "metric": "net_gw_availability_for_future",
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Annual GW allocation for domestic use in Maharashtra.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Maharashtra",
+        "metric": "annual_gw_allocation_for_domestic_use",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Industrial annual extraction for Karnataka 2023.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Karnataka",
+        "metric": "industrial_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare total annual extraction in Gujarat and Maharashtra.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Gujarat",
+          "Maharashtra"
+        ],
+        "metric": "total_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Kerala ka annual recharge 2020-2023.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "state_name": "Kerala",
+        "metric": "total_annual_groundwater_recharge",
+        "start_year": 2020,
+        "end_year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Stage of groundwater extraction in Odisha districts 2023.",
+    "response": {
+      "intent": "list_units_by_category",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Odisha",
+        "metric": "stage_of_gw_extraction",
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Top 5 districts with highest total annual extraction in Rajasthan.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "metric": "total_annual_extraction",
+        "sort_order": "desc",
+        "limit": 5,
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Groundwater data for all blocks in Madhya Pradesh.",
+    "response": {
+      "intent": "list_units_by_category",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Madhya Pradesh",
+        "metric": "ground_water_depth",
+        "year": 2023
+      },
+      "confidence": 0.91
+    }
+  },
+  {
+    "query": "Net groundwater availability for future in Tamil Nadu.",
+    "response": {
+      "intent": "get_state_metric",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metric": "net_gw_availability_for_future",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Compare irrigation extraction across Punjab, Haryana, and Delhi.",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Punjab",
+          "Haryana",
+          "Delhi"
+        ],
+        "metric": "irrigation_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Total annual groundwater recharge and extraction for Jaipur district 2023.",
+    "response": {
+      "intent": "get_data_for_unit",
+      "entities": {
+        "district_name": "Jaipur",
+        "metrics": [
+          "total_annual_groundwater_recharge",
+          "total_annual_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "How has the irrigation extraction compared to the domestic extraction in Tamil Nadu over the last five years?",
+    "response": {
+      "intent": "compare_categories_in_state",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "metrics": [
+          "irrigation_annual_extraction",
+          "domestic_annual_extraction"
+        ],
+        "start_year": 2019,
+        "end_year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Maharashtra ke kon se 5 districts mein groundwater depth 20 meter se kam hai aur annual extraction 1000 MCM se zyada hai?",
+    "response": {
+      "intent": "find_units_by_compound_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Maharashtra",
+        "conditions": [
+          {
+            "metric": "ground_water_depth",
+            "operator": "<",
+            "threshold": 20
+          },
+          {
+            "metric": "total_annual_extraction",
+            "operator": ">",
+            "threshold": 1000
+          }
+        ],
+        "logical_operator": "AND",
+        "limit": 5,
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What's the trend of total groundwater extraction in Gujarat and Rajasthan from 2018 to 2023?",
+    "response": {
+      "intent": "compare_historical_trends",
+      "entities": {
+        "state_names": [
+          "Gujarat",
+          "Rajasthan"
+        ],
+        "metric": "total_annual_extraction",
+        "start_year": 2018,
+        "end_year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Delhi district ke blocks mein, top 3 blocks batao jaha annual allocation for domestic use sabse zyada hai.",
+    "response": {
+      "intent": "find_units_by_metric_value",
+      "entities": {
+        "unit_type": "block",
+        "district_name": "Delhi",
+        "metric": "annual_gw_allocation_for_domestic_use",
+        "sort_order": "desc",
+        "limit": 3,
+        "year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "Why is groundwater recharge from rainfall higher in Punjab than in Haryana?",
+    "response": {
+      "intent": "interpretive_query",
+      "entities": {
+        "state_names": [
+          "Punjab",
+          "Haryana"
+        ],
+        "metric": "monsoon_recharge_from_rainfall",
+        "comparison_type": "reason"
+      },
+      "confidence": 0.88
+    }
+  },
+  {
+    "query": "Get me the latest data for total annual extraction and stage of extraction for all over-exploited districts in Rajasthan.",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "condition": "over-exploited",
+        "metrics": [
+          "total_annual_extraction",
+          "stage_of_gw_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "Karnataka aur Tamil Nadu mein total annual recharge aur total annual extraction ka kya difference hai?",
+    "response": {
+      "intent": "compare_states_extraction",
+      "entities": {
+        "state_names": [
+          "Karnataka",
+          "Tamil Nadu"
+        ],
+        "metrics": [
+          "total_annual_groundwater_recharge",
+          "total_annual_extraction"
+        ],
+        "year": 2023
+      },
+      "confidence": 0.94
+    }
+  },
+  {
+    "query": "Show me the historical trend of industrial annual extraction in Bengaluru from 2015 to now.",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "district_name": "Bengaluru",
+        "metric": "industrial_annual_extraction",
+        "start_year": 2015,
+        "end_year": 2023
+      },
+      "confidence": 0.96
+    }
+  },
+  {
+    "query": "List all the districts in Gujarat that are considered semi-critical and have a groundwater depth between 15 and 20 meters.",
+    "response": {
+      "intent": "list_units_by_compound_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Gujarat",
+        "category": "semi-critical",
+        "conditions": [
+          {
+            "metric": "ground_water_depth",
+            "operator": "between",
+            "threshold": [
+              15,
+              20
+            ]
+          }
+        ],
+        "year": 2023
+      },
+      "confidence": 0.93
+    }
+  },
+  {
+    "query": "Groundwater ka sustainability kya hai?",
+    "response": {
+      "intent": "get_definition",
+      "entities": {
+        "term": "groundwater_sustainability"
+      },
+      "confidence": 0.98
+    }
+  },
+  {
+    "query": "What percentage of total annual extraction is used for irrigation in Tamil Nadu?",
+    "response": {
+      "intent": "calculate_percentage",
+      "entities": {
+        "state_name": "Tamil Nadu",
+        "numerator_metric": "irrigation_annual_extraction",
+        "denominator_metric": "total_annual_extraction",
+        "year": 2023
+      },
+      "confidence": 0.95
+    }
+  },
+  {
+    "query": "What is the net groundwater availability for future for all districts in Rajasthan, categorized by their extraction status?",
+    "response": {
+      "intent": "list_units_by_condition",
+      "entities": {
+        "unit_type": "district",
+        "state_name": "Rajasthan",
+        "metric": "net_gw_availability_for_future",
+        "categorized_by": "extraction_status",
+        "year": 2023
+      },
+      "confidence": 0.92
+    }
+  },
+  {
+    "query": "What is the trend of groundwater depth in semi-critical blocks of Haryana over the last 10 years?",
+    "response": {
+      "intent": "get_historical_data",
+      "entities": {
+        "unit_type": "block",
+        "state_name": "Haryana",
+        "category": "semi-critical",
+        "metric": "ground_water_depth",
+        "years": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023
+        ]
+      },
+      "confidence": 0.94
+    }
+  }
+]

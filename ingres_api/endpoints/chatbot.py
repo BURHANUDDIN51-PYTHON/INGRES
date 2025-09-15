@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 from ingres_api.models.request_models import ChatQuery, NLResponseRequest
 from ingres_api.utils.logger import logger
-from ingres_api.detect_intent.detect_intent_groq import DetectIntent
-from ingres_api.natural_response.natural_reponse_groq import NaturalLanguageResponse
+from ingres_api.detect_intent.detect_intent import DetectIntent
+from ingres_api.natural_response.natural_response import NaturalLanguageResponse
 
 
 # Add the prefix /chatbot
@@ -37,12 +37,13 @@ async def detect_intent(chat_query: ChatQuery):
     return {"query": chat_query.query, "result": response}
 
 
+
 @router.post("/generate-response")
 async def generate_natural_response(request: NLResponseRequest):
     """
     Endpoint to generate a natural language response based on intent, query, and raw_data.
     """
-    logger.info(f"generate_natural_response called with intent: {request.intent}, query: {request.query}, raw_data: {request.rawData}")
+    logger.info(f"generate_natural_response called with intent: {request.intent}, query: {request.query}, rawData: {request.rawData}")
     response = NATURAL_RESPONSE.generate_response(
         intent=request.intent,
         query=request.query,
