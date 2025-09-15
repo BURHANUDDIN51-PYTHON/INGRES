@@ -1,0 +1,1 @@
+from ingres_api.main import app
